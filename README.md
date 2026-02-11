@@ -65,6 +65,20 @@ Evaluation Metrics:
 * Fiber optic + short contracts form high-risk segment
 * Pricing and onboarding improvements could reduce churn
 
+## Interactive Dashboard
+
+View the live Tableau dashboard here:
+
+https://public.tableau.com/views/Dashboard_17707979717240/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+This dashboard explores churn behavior across:
+
+* Contract types
+* Internet services
+* Customer tenure
+* Pricing distribution
+* Payment methods
+
 ## Project Structure
 
 telecom-churn/
