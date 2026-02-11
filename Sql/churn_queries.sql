@@ -10,7 +10,7 @@ SELECT *
 FROM SNOWFLAKE_LEARNING_DB.PUBLIC.TELCO
 LIMIT 10;
 
-3) Distinct churn labels (VERY IMPORTANT)
+3) Distinct churn labels
 SELECT CHURN, COUNT(*) AS customers
 FROM SNOWFLAKE_LEARNING_DB.PUBLIC.TELCO
 GROUP BY CHURN
@@ -90,7 +90,7 @@ FROM SNOWFLAKE_LEARNING_DB.PUBLIC.TELCO
 GROUP BY CONTRACT, INTERNETSERVICE
 ORDER BY churn_rate_percent DESC;
 
-11) Identify "high-risk" segment (example business rule)
+11) Identify "high-risk" segment 
 -Month-to-month + high charges + low tenure
 
 SELECT
@@ -100,7 +100,7 @@ WHERE CONTRACT = 'Month-to-month'
   AND MONTHLYCHARGES > 70
   AND TENURE < 12;
 
-12) Rank segments by churn rate (window function example)
+12) Rank segments by churn rate
 WITH contract_rates AS (
   SELECT
     CONTRACT,
